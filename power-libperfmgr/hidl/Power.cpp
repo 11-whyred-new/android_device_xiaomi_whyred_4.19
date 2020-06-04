@@ -37,8 +37,8 @@
 #define TAP_TO_WAKE_NODE "/sys/touchpanel/double_tap"
 #endif
 
-#ifndef TAP_TO_WAKE_NODE2 define
-TAP_TO_WAKE_NODE2 "/proc/tp_gesture"
+#ifndef TAP_TO_WAKE_NODE2
+#define TAP_TO_WAKE_NODE2 "/proc/tp_gesture"
 #endif
 
 extern struct stat_pair rpm_stat_map[];
