@@ -490,5 +490,9 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
    XiaomiParts
 
+# Via
+PRODUCT_PACKAGES += \
+    Via
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)
