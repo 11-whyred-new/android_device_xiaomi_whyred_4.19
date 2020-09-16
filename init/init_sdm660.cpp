@@ -1,6 +1,7 @@
 /*
    Copyright (c) 2016, The CyanogenMod Project
-   Copyright (c) 2019, The LineageOS Project
+   Copyright (c) 2019-2020, The LineageOS Project
+
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
    met:
@@ -13,6 +14,7 @@
     * Neither the name of The Linux Foundation nor the names of its
       contributors may be used to endorse or promote products derived
       from this software without specific prior written permission.
+
    THIS SOFTWARE IS PROVIDED "AS IS" AND ANY EXPRESS OR IMPLIED
    WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT
@@ -39,21 +41,12 @@
 #include "vendor_init.h"
 #include "property_service.h"
 
-using android::base::GetProperty;
-using std::string;
-
-string heapstartsize, heapgrowthlimit, heapsize,
-       heapminfree, heapmaxfree, heaptargetutilization;
-
-void property_override(string prop, string value)
-{
-    auto pi = (prop_info*) __system_property_find(prop.c_str());
-
-    if (pi != nullptr)
-        __system_property_update(pi, value.c_str(), value.size());
-    else
-        __system_property_add(prop.c_str(), prop.size(), value.c_str(), value.size());
-}
+char const *heapstartsize;
+char const *heapgrowthlimit;
+char const *heapsize;
+char const *heapminfree;
+char const *heapmaxfree;
+char const *heaptargetutilization;
 
 void check_device()
 {
@@ -85,6 +78,17 @@ void check_device()
         heaptargetutilization = "0.75";
         heapminfree = "512k";
         heapmaxfree = "8m";
+    }
+}
+
+void property_override(char const prop[], char const value[], bool add = true)
+{
+    auto pi = (prop_info *) __system_property_find(prop);
+
+    if (pi != nullptr) {
+        __system_property_update(pi, value, strlen(value));
+    } else if (add) {
+        __system_property_add(prop, strlen(prop), value, strlen(value));
     }
 }
 
