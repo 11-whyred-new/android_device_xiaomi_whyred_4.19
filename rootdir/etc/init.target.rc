@@ -562,3 +562,8 @@ on property:sys.camera.face.unlock=*
 # FPS Info
   chown system graphics /sys/devices/virtual/graphics/fb0/measured_fps
   chmod 0660 /sys/devices/virtual/graphics/fb0/measured_fps
+
+on property:sys.boot_completed=1
+    # Restrict permissions to socket file
+    # to hide Magisk & co.
+    chmod 440 /proc/net/uni
