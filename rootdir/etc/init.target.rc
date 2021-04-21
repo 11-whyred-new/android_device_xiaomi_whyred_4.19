@@ -558,3 +558,7 @@ service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
 # Workaround for camera HAL can not read sys property
 on property:sys.camera.face.unlock=*
     setprop vendor.camera.face.unlock ${sys.camera.face.unlock}
+
+# FPS Info
+  chown system graphics /sys/devices/virtual/graphics/fb0/measured_fps
+  chmod 0660 /sys/devices/virtual/graphics/fb0/measured_fps
