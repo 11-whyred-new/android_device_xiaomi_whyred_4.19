@@ -207,3 +207,6 @@ persist.dirac.acs.ignore_error=1
 # Dirac headset effect
 ro.audio.soundfx.dirac=true
 persist.audio.dirac.speaker=true
+
+# WFD
+persist.debug.wfd.enable=1
