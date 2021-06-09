@@ -2,6 +2,7 @@ allow system_app sysfs_leds:dir search;
 allow system_app sysfs_leds:file { open getattr write };
 allow system_app kcal_dev:file rw_file_perms;
 allow system_app kcal_dev:dir search;
+allow system_app proc_vmallocinfo:file read;
 allow system_app sysfs_vibrator:file rw_file_perms;
 allow system_app sysfs_vibrator:dir search;
 allow system_app sysfs_audio_gain:file rw_file_perms;
@@ -17,7 +18,7 @@ allow system_app sysfs_leds:dir search;
 allow system_app sysfs_torch:file { open getattr write };
 allow system_app hal_mlipay_hwservice:hwservice_manager find;
 allow system_app hal_mlipay_default:binder call;
-allow system_app vendor_default_prop:file { read };
+allow system_app blkio_dev:dir search;
 allow system_app system_data_file:dir { write };
 allow system_app sysfs_kgsl:lnk_file { read };
 allow system_app sysfs_kgsl:dir { search };
@@ -43,3 +44,7 @@ allow system_app sysfs_zram:file r_file_perms;
 r_dir_file(system_app, sysfs_battery_supply);
 
 diag_use(system_app)
+
+allow system_app sysfs_zram:dir search;
+allow system_app vendor_default_prop:file { getattr open read };
+allow system_app wificond:binder call;
