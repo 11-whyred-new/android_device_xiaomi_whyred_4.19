@@ -41,7 +41,7 @@ TARGET_GAPPS_ARCH := arm64
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := lineage_whyred
+PRODUCT_NAME := dot_whyred
 PRODUCT_MODEL := Redmi Note 5
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
