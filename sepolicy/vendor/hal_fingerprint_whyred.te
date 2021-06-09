@@ -31,6 +31,7 @@ allow hal_fingerprint_whyred persist_file:dir r_dir_perms;
 allow hal_fingerprint_whyred persist_fingerprint_file:file r_file_perms;
 allow hal_fingerprint_whyred rootfs:dir read;
 allow hal_fingerprint_whyred self:netlink_socket create_socket_perms_no_ioctl;
+allow hal_fingerprint_sdm660 sysfs_fingerprint:file { read open write };
 
 allow hal_fingerprint_whyred hal_perf_hwservice:hwservice_manager find;
 binder_call(hal_fingerprint_whyred, hal_perf_default)
