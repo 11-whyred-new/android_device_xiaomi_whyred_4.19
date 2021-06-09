@@ -18,7 +18,7 @@ allow system_app sysfs_leds:dir search;
 allow system_app sysfs_torch:file { open getattr write };
 allow system_app hal_mlipay_hwservice:hwservice_manager find;
 allow system_app hal_mlipay_default:binder call;
-allow system_app blkio_dev:dir search;
+#allow system_app blkio_dev:dir search;
 allow system_app system_data_file:dir { write };
 allow system_app sysfs_kgsl:lnk_file { read };
 allow system_app sysfs_kgsl:dir { search };

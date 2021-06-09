@@ -28,7 +28,7 @@ allow hal_fingerprint_whyred media_rw_data_file:dir search;
 allow hal_fingerprint_whyred mnt_user_file:dir search;
 allow hal_fingerprint_whyred mnt_user_file:lnk_file r_file_perms;
 allow hal_fingerprint_whyred persist_file:dir r_dir_perms;
-allow hal_fingerprint_whyred persist_fingerprint_file:file r_file_perms;
+#allow hal_fingerprint_whyred persist_fingerprint_file:file r_file_perms;
 allow hal_fingerprint_whyred rootfs:dir read;
 allow hal_fingerprint_whyred self:netlink_socket create_socket_perms_no_ioctl;
 allow hal_fingerprint_whyred sysfs_fingerprint:file { read open write };
