@@ -224,3 +224,8 @@ persist.audio.dirac.speaker=true
 
 # WFD
 persist.debug.wfd.enable=1
+
+# IORap
+ro.iorapd.enable=true
+iorapd.perfetto.enable=true
+iorapd.readahead.enable=true
