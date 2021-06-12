@@ -113,7 +113,7 @@ vendor/etc/camera/whyred_s5k5e8_ofilm_cn_i_chromatix.xml
 vendor/etc/camera/whyred_s5k5e8_ofilm_global_i_chromatix.xml
 vendor/etc/camera/whyred_s5k5e8_qtech_cn_ii_chromatix.xml
 vendor/etc/camera/whyred_s5k5e8_qtech_global_ii_chromatix.xml
-vendor/lib/hw/camera.sdm660.so|35b306750820f4f5caa2d63898c739e8d5669b21
+vendor/lib/hw/camera.sdm660.so|4f71d1c599c7d9ff20164fc0293e4f9fa5ab7b8d
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libarcsoft_dualcam_refocus.so
 vendor/lib/libarcsoft_high_dynamic_range.so
