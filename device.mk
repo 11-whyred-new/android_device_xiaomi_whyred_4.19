@@ -416,7 +416,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2 \
     android.hardware.radio.deprecated@1.0 \
     android.hardware.radio@1.5 \
-    android.hardware.secure_element@1.2 \
+    android.hardware.secure_element@1.1 \
     libavservices_minijail.vendor \
     libjson \
     libprotobuf-cpp-full \
