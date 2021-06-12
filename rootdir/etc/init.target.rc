@@ -192,24 +192,15 @@ on property:vendor.usb.controller=*
     chown system system /sys/touchpanel/double_tap
 
  # Vibration
-  chown system system /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,haptics@c000/leds/vibrator/vmax_override 
-  chmod 0660 /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,haptics@c000/leds/vibrator/vmax_override 
-  write /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,haptics@c000/leds/vibrator/vmax_override 1
-  chown system system /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,haptics@c000/leds/vibrator/vmax_mv_user 
-  chown system system /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,haptics@c000/leds/vibrator/vmax_mv_call 
-  chown system system /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,haptics@c000/leds/vibrator/vmax_mv_strong 
-  chown system system /sys/class/leds/vibrator/vmax_override
-  write /sys/class/leds/vibrator/vmax_override 1
-  chown system system /sys/class/leds/vibrator/vmax_mv_user
-  chown system system /sys/class/leds/vibrator/vmax_mv_call 
-  chown system system /sys/class/leds/vibrator/vmax_mv_strong
-  chown system system sys/class/leds/vibrator/vmax_override
-  chmod 0660 /sys/class/leds/vibrator/vmax_override
-  write /sys/class/leds/vibrator/vmax_override 1
-  chown root system /sys/class/timed_output/vibrator/vtg_level
-  chmod 0660 /sys/class/timed_output/vibrator/vtg_level 
-  chown system system /sys/devices/virtual/timed_output/vibrator/vtg_level
-  chmod 0660 /sys/devices/virtual/timed_output/vibrator/vtg_level
+    chown system system /sys/class/leds/vibrator/vmax_override
+    write /sys/class/leds/vibrator/vmax_override 1
+    chown system system /sys/class/leds/vibrator/vmax_mv_strong
+    chown system system /sys/class/leds/vibrator/vmax_mv_call
+    chown system system /sys/class/leds/vibrator/vmax_mv_user 
+    chmod 0660 /sys/class/leds/vibrator/vmax_override
+    chmod 0660 /sys/class/leds/vibrator/vmax_mv_strong
+    chmod 0660 /sys/class/leds/vibrator/vmax_mv_call
+    chown 0660 /sys/class/leds/vibrator/vmax_mv_user
 
     # KCal
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_cont
@@ -238,17 +229,10 @@ on property:vendor.usb.controller=*
     chmod 0660 /sys/module/mdss_fb/parameters/backlight_dimmer
 
     # Torch
-    chown root system /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,leds@d300/leds/led:torch_0/max_brightness 
-    chmod 0660 /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,leds@d300/leds/led:torch_0/max_brightness 
-    chown root system /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,leds@d300/leds/led:torch_1/max_brightness 
-    chmod 0660 /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,leds@d300/leds/led:torch_1/max_brightness 
-    chown root system /sys/class/leds/led:torch_0/max_brightness
-    chmod 0660 /sys/class/leds/led:torch_0/max_brightness
-    chown root system /sys/class/leds/led:torch_1/max_brightness
-    chmod 0660 /sys/class/leds/led:torch_1/max_brightness 
-    chown root system /sys/devices/platform/soc/soc:qcom,camera-flash/leds/torch-light1/max_brightness
-    chmod 0660 /sys/devices/platform/soc/soc:qcom,camera-flash/leds/torch-light1/max_brightness
-    write /sys/devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,leds@d300/leds/led:torch_1/max_brightness 0
+    chmod 0660  /sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_0/max_brightness 
+    chmod 0660 /sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_1/max_brightness 
+    chown system system /sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_0/max_brightness 
+    chown system system /sys/devices/soc/800f000.qcom,spmi/spmi-0/spmi0-03/800f000.qcom,spmi:qcom,pm660l@3:qcom,leds@d300/leds/led:torch_1/max_brightness
 
 # FPS Info
     chown system graphics /sys/class/graphics/fb0/measured_fps
