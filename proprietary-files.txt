@@ -1427,3 +1427,16 @@ vendor/lib/vendor.display.config@2.0.so|ac548f2042e478ccb75e27ee5d667cd5899c10bf
 vendor/lib64/libdisplayconfig.qti.so|1e99dc1555b148ff951bdb8071b4ac5d85dae5ac
 vendor/lib64/libqdMetaData.so|13edb7afc000f3144258b3fda76a2ecbfe0f4991
 vendor/lib64/vendor.display.config@2.0.so|5bf74b0011da436230ab0a5d185e0ac9379efbf0
+
+# Common Camera
+vendor/lib/libchromaflash.so
+vendor/lib/libllvd_smore.so
+vendor/lib/libmmcamera_chromaflash_lib.so 
+vendor/lib/libmmcamera_llvd.so
+vendor/lib/libmmcamera_optizoom_lib.so 
+vendor/lib/libmmcamera_stillmore_lib.so
+vendor/lib/libmmcamera_trueportrait_lib.so 
+vendor/lib/libmmcamera_ubifocus_lib.so
+vendor/lib/liboptizoom.so vendor/lib/libseemore.so 
+vendor/lib/libtrueportrait.so
+vendor/lib/libubifocus.so
