@@ -148,7 +148,6 @@ vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
-vendor/lib/libmmcamera_ppeiscore.so
 vendor/lib/libmmcamera_quadracfa.so
 vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
@@ -198,6 +197,9 @@ vendor/lib/libvidhance.so
 vendor/lib/libvidhance_gyro.so
 vendor/lib/libXMFD_AgeGender.so
 vendor/lib/mibokeh_660_opencl.bin
+
+# Camera-sensors - from LA.UM.9.6.2.r1-04100-89xx.0
+vendor/lib/libmmcamera_ppeiscore.so|986c8e050e75bdc3fe5ee442efb94baa83d1813c
 
 # Camera actuators
 vendor/lib/libactuator_whyred_imx486_ofilm_global_i_dw9714v.so
