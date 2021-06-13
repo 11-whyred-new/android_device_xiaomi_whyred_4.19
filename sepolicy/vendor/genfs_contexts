@@ -101,3 +101,7 @@ genfscon sysfs /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.q
 genfscon sysfs /devices/platform/soc/200f000.qcom,spmi/spmi-0/spmi0-03/200f000.qcom,spmi:qcom,pmi8950@3:qcom,leds@d300/leds/led:torch_1/max_brightness                u:object_r:sysfs_tbrightness:s0
 genfscon sysfs /class/leds/led:torch_0/max_brightness                  u:object_r:sysfs_tbrightness:s0
 genfscon sysfs /class/leds/led:torch_1/max_brightness                  u:object_r:sysfs_tbrightness:s0
+
+# FPS Info
+genfscon sysfs /devices/virtual/graphics/fb0/measured_fps           u:object_r:sysfs_fpsinfo:s0 
+genfscon sysfs /class/graphics/fb0/measured_fps                     u:object_r:sysfs_fpsinfo:s0

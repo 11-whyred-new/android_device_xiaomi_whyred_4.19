@@ -48,3 +48,7 @@ diag_use(system_app)
 allow system_app sysfs_torch:dir search;
 allow system_app sysfs_torch:file rw_file_perms;
 allow system_app sysfs_tbrightness:file { open getattr write };
+
+# FPS Info
+allow system_app sysfs_fps:file rw_file_perms;
+allow system_app sysfs_fpsinfo:file rw_file_perms;
