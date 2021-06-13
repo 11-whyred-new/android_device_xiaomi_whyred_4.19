@@ -222,10 +222,3 @@ persist.debug.wfd.enable=1
 ro.iorapd.enable=true
 iorapd.perfetto.enable=true
 iorapd.readahead.enable=true
-
-# DRM Service
-drm.service.enabled=true
-media.mediadrmservice.enable=true
-
-# BPF
-ro.kernel.ebpf.supported=true
