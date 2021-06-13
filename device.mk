@@ -96,6 +96,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.authsecret@1.0-service
 
+# Powerhint
+EAS_POWERHINT_VARIANT := sdm636
+
 # Adapt Launch
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/lm/AdaptLaunchFeature.xml:$(TARGET_COPY_OUT_VENDOR)/etc/lm/AdaptLaunchFeature.xml
