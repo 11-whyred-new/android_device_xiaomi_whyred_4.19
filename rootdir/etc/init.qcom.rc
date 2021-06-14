@@ -216,10 +216,6 @@ on boot
     mkdir /persist/display 0770 system graphics
     mkdir /mnt/vendor/persist/display 0770 system graphics
 
-    # Create apex symlinked dirs
-    mkdir /data/vendor/metadata_apex 0755 root system
-    mkdir /data/vendor/metadata_apex/sessions 0700 root system
-
     # Create vpp directory
     mkdir /mnt/vendor/persist/vpp 0770 media media
 
