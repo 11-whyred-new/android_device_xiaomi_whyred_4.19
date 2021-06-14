@@ -581,6 +581,7 @@ PRODUCT_COPY_FILES += \
 # Soong
 PRODUCT_BOARD_PLATFORM := sdm660
 PRODUCT_USES_QCOM_HARDWARE := true
+TARGET_USES_UM_4_19 := true
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/whyred/whyred-vendor.mk)
