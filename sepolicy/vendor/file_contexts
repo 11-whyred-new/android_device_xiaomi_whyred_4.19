@@ -81,4 +81,4 @@
 /sys/class/leds/vibrator/vmax_mv_strong              u:object_r:sysfs_vibrator:s0
 
 # QTI Thermal
-/vendor/bin/hw/android\.hardware\.thermal@2\.0-service\.qti           u:object_r:hal_thermal_default_exec:s0
+/vendor/bin/hw/android\.hardware\.thermal@2\.0-service\.mock                              u:object_r:hal_thermal_default_exec:s0

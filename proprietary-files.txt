@@ -689,8 +689,9 @@ vendor/lib/libmmcamera_whyred_s5k5e8_qtech_ii_eeprom.so
 vendor/lib/libMiWatermark.so|fe09202b8283cd88f86e96a5ef52b4db94b7ade5
 vendor/lib/libft2vendor.so|1332ed2141660b9372c959ca1155575c25a73751
 
-# Charger - from ginkgo 21.4.28
-vendor/bin/hvdcp_opti|673f4c4eb8fa0ad5f274a18081c8619f4b775596
+# Charger - from LA.UM.9.1-r1-06700-Smxxx0.0
+vendor/bin/hvdcp_opti|bd71e443a58117aa645553a816805b0c60eafce6
+vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc|29b23be4f604282abf715f86aec9697175a9aaad
 
 # CNE - from ginkgo 21.4.28
 system_ext/framework/com.quicinc.cne.api-V1.1-java.jar|e71f1a060bc65eb373beb6d33158c0e2b37e2a70
@@ -1339,10 +1340,10 @@ vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib64/libtime_genoff.so|c8e0bbc9c6b7b5beddba43bc4125a9eaeba7c79f
 
 # Thermal - from ginkgo 21.4.28
-vendor/bin/thermal-engine|6cd660e2b813896670a14be244d1046afe90064e
-vendor/lib/libthermalclient.so|0aab8039958acdd27af71c5c6923dcd7208f886f
-vendor/lib/libthermalfeature.so|52c35a4e2bc048839e4f9172cc2d299e2367a1fd
-vendor/lib64/libthermalclient.so|ed01fa6caeb9dfbddc0fafc197abe13f3c8b56f9
+vendor/bin/thermal-engine|e74184e124c41e51535fad6a6ad9cc089695211b
+vendor/lib/libthermalclient.so|31533667b7f8137670189a14c68ccb51c7ca6dab
+vendor/lib/libthermalfeature.so|52c35a4e2bc048839e4f9172cc2d299e2367a1fd 
+vendor/lib64/libthermalclient.so|41274c82e1a472d12b2ebcb4156f7f77b109efa8
 vendor/lib64/libthermalfeature.so|f2b78560b6b87c19336ae48ea26d3af756123047
 
 # TUI - from jasmine
