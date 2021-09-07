@@ -745,9 +745,6 @@ vendor/lib/libchromatix_whyred_ov13855_ofilm_cn_ii_zsl_preview_3a.so|76d82c93ea5
 vendor/lib/libchromatix_whyred_ov13855_ofilm_cn_ii_zsl_video_3a.so|47273452c63e569f4134966469775b144afaca9f
 vendor/lib/libmmcamera2_mct.so|534622f592a0c9331414c3be58e5000c1f498b07
 
-# Charger
-vendor/bin/hvdcp_opti
-
 # Charger - from LA.UM.9.1-r1-06700-Smxxx0.0
 vendor/bin/hvdcp_opti|bd71e443a58117aa645553a816805b0c60eafce6
 vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc|29b23be4f604282abf715f86aec9697175a9aaad
