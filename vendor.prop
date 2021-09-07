@@ -152,6 +152,7 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Display
 debug.sf.hw=1
+debug.sf.enable_hwc_vds=1
 ro.opengles.version=196610
 ro.vendor.display.cabl=0
 vendor.display.disable_skip_validate=1
@@ -267,3 +268,6 @@ persist.camera.is_type=5
 persist.camera.googfd.enable=1
 persist.camera.logical.default=1
 persist.camera.gzoom.at=0
+
+# Disable vsync for cpu rendered apps
+debug.cpurend.vsync=false
